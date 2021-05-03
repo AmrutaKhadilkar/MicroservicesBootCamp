@@ -35,12 +35,12 @@ public class CurrencyController {
 	CurrencyRepo repo;
 	
 	
-	@GetMapping("/product")
+	@GetMapping("/currency")
 	public List<Currency> getAllCurrencies() {
 		return currencyService.getAllCurrencies();
 	}
 
-	@PostMapping("/currency")
+	@PostMapping("/currencynew")
 	public ResponseEntity createCurrency(@RequestBody  Currency currency)
 	{
 		Currency c =new Currency();

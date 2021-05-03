@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.ms.boot.model.CurrencyConRequest;
 import com.ms.boot.model.CurrencyConResponse;
 
-@FeignClient(name ="CURRENCYCONVERT")
+@FeignClient(name ="CURRENCYCONVERT", url = "http://currencyconvert:8091")
 public interface ConversionServiceProxyInterface {
 	
 	
